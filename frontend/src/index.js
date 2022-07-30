@@ -5,15 +5,18 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { UpdateGoalProvider } from './context/updateGoalContext';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <UpdateGoalProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </UpdateGoalProvider>
   </React.StrictMode>
 );
 

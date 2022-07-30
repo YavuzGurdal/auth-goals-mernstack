@@ -11,7 +11,10 @@ const { protect } = require('../middleware/authMiddleware')
 // router.delete('/:id', deleteGoal)
 
 // bu sekilde daha kisa yazabilirim
+// getGoals ve setGoal ayni route'u kullandigi icin asagidaki gibi yazbilirim
 router.route('/').get(protect, getGoals).post(protect, setGoal)
+
+// deleteGoal ve updateGoal ayni route'u kullandigi icin asagidaki gibi yazbilirim
 router.route('/:id').delete(protect, deleteGoal).put(protect, updateGoal)
 
 module.exports = router

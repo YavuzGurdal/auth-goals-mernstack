@@ -35,6 +35,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+input:focus {
+  outline: none;
+}
+
 .container {
   width: 100%;
   max-width: 960px;
@@ -75,7 +79,12 @@ h3 {
   margin-right: 5px;
 }
 
+.logo {
+  font-size: 18px;
+}
+
 .heading {
+  color: #444;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 50px;
@@ -98,11 +107,22 @@ h3 {
   padding: 20px 0 10px;
   position: relative;
 }
+.goal h2 {
+  color: #333;
+}
 
 .goal .close {
   position: absolute;
   top: 3px;
   right: 3px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.goal .update {
+  position: absolute;
+  top: 3px;
+  left: 3px;
   cursor: pointer;
   border: none;
   background: none;
@@ -118,7 +138,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-.form-group input,
+/* .form-group input, */
 .form-group textarea,
 .form-group select {
   width: 100%;
@@ -129,20 +149,40 @@ h3 {
   font-family: inherit;
 }
 
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  border-radius: 0;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+.goalInput {
+  border: 1px solid #dadada !important ;
+  border-radius: 5px !important;
+}
+.goalInput:focus {
+  border: 1px solid #9d9b9b !important ;
+}
+
 .form-group label {
   text-align: left;
   display: block;
   margin: 0 0 5px 3px;
+  font-size: 18px;
 }
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 1px solid gray;
   border-radius: 5px;
-  background: #000;
+  background: gray;
   color: #fff;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   text-align: center;
   appearance: button;
@@ -162,6 +202,7 @@ h3 {
 
 .btn-block {
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 

@@ -70,12 +70,14 @@ function Login() {
                         <input
                             type="email" className="form-control" id='email' name='email' value={email} placeholder='Enter your Email'
                             onChange={onChange}
+                            autoComplete="off"
                         />
                     </div>
                     <div className="form-group">
                         <input
                             type="password" className="form-control" id='password' name='password' value={password} placeholder='Enter Password'
                             onChange={onChange}
+                            autoComplete="off"
                         />
                     </div>
                     <div className="form-group">

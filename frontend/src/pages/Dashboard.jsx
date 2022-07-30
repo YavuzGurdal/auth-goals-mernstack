@@ -8,6 +8,7 @@ import { getGoals, reset } from '../features/goals/goalSlice'
 
 
 function Dashboard() {
+
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -50,7 +51,7 @@ function Dashboard() {
                 <p>Goals Dashboard</p>
             </section>
 
-            <GoalForm />
+            <GoalForm goals={goals} />
 
             <section className="content">
                 {
