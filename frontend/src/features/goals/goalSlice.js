@@ -96,6 +96,9 @@ export const goalSlice = createSlice({
             burda case'lere gore state degisimlerini yapiyorum
             pending,rejected,fulfilled,typePrefix createAsyncThunk'dan parametre olarak geliyor
         */
+
+        // calistirdigimiz fonksiyonlardan sonra state'de yapilacak degisiklikleri burda yaziyoruz
+        // mesela .addCase(getGoals.fulfilled, (state, action) => { 'de state.goals = action.payload diyerek geelen goal'u state'e ekliyorum
         builder
             .addCase(getGoals.pending, (state) => {
                 state.isLoading = true
